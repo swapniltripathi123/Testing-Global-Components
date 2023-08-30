@@ -2,24 +2,33 @@
   "name": "my-react-library",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --config webpack.config.js",
     "start": "webpack serve --config webpack.config.js --open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/swapniltripathi123/Testing-Global-Components"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/swapniltripathi123/"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "styled-components": "^3.2.5"
   },
   "devDependencies": {
-    "@babel/core": "^7.22.11",
-    "@babel/preset-env": "^7.22.10",
-    "@babel/preset-react": "^7.22.5",
-    "babel-loader": "^9.1.3",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-preset-env": "^1.7.0",
     "webpack": "^5.88.2",
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^4.15.1"
